@@ -1,3 +1,20 @@
+<?php 
+session_start();    
+
+if(empty($_SESSION['id_petugas'])){
+    echo "<script>
+    alert('Maaf Anda Belum Login');
+    window.location.assign('../index2.php');
+    </script>";
+}
+if($_SESSION['level']!='admin'){
+    echo "<script>
+    alert('Maaf Anda Bukan Sesi Admin');
+    window.location.assign('../index2.php');
+    </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +37,7 @@
         <a href="admin.php?url=petugas" class="btn btn-primary"> Petugas</a>
         <a href="admin.php?url=pembayaran" class="btn btn-primary"> Pembayaran</a>
         <a href="admin.php?url=laporan" class="btn btn-primary"> Laporan</a>
-        <a href="admin.php?=logout" class="btn btn-primary"> Logout</a>
+        <a href="admin.php?url=logout" class="btn btn-primary"> Logout</a>
 
         <div class="card" mt-2>
             <div class="card-body">
@@ -29,7 +46,7 @@
                 $file = @$_GET['url'];
                 if (empty($file)){
                     echo "<h4>Selamat Datang Di Halaman Administrator.</h4>";
-                    echo"Ap1ikasi Pembayaran SPP digunakan untuk mempermudah dalam mencatat pembayaran siswa / siswi disekolah.";
+                    echo"Aplikasi Pembayaran SPP digunakan untuk mempermudah dalam mencatat pembayaran siswa / siswi disekolah.";
                 }else {
                     include $file.'.php';
                 }
