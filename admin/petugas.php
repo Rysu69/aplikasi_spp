@@ -4,7 +4,7 @@
 <table class="table table-stripped table-bordered">
     <tr class="fw-bold">
         <td>No</td>
-        <td>Username/td>
+        <td>Username</td>
         <td>Password</td>
         <td>Nama Petugas</td>
         <td>Level</td>
