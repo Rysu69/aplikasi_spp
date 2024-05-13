@@ -1,7 +1,7 @@
 <h5>Halaman Data Petugas.</h5>
 <a href="?url=tambah-petugas" class="btn btn-primary"> Tambah Petugas </a>
 <hr>
-<table class="table table-stripped table-bordered">
+<table class="table table-striped table-bordered">
     <tr class="fw-bold">
         <td>No</td>
         <td>Username</td>

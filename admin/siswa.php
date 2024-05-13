@@ -1,7 +1,7 @@
 <h5>Halaman Data Siswa.</h5>
 <a href="?url=tambah-siswa" class="btn btn-primary"> Tambah Siswa </a>
 <hr>
-<table class="table table-stripped table-bordered">
+<table class="table table-striped table-bordered">
     <tr class="fw-bold">
         <td>No</td>
         <td>NISN</td>

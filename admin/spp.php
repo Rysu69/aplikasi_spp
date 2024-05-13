@@ -1,7 +1,7 @@
 <h5>Halaman Data SPP.</h5>
 <a href="?url=tambah-spp" class="btn btn-primary"> Tambah SPP </a>
 <hr>
-<table class="table table-stripped table-bordered">
+<table class="table table-striped table-bordered">
     <tr class="fw-bold">
         <td>No</td>
         <td>Tahun</td>

@@ -45,8 +45,7 @@ $data = mysqli_fetch_array($query);
     <div class="form-group mb-2">
         <label>SPP</label>
         <select name="id_spp" class="form-control" required>
-        <option value="<?= $data['id_spp'] ?>"> <?= $data['tahun']; ?> | <?= number_format($data['
-        nominal'],2,',','.'); ?> </option>
+        <option value="<?= $data['id_spp'] ?>"> <?= $data['tahun']; ?> | <?= number_format($data['nominal'],2,',','.'); ?> </option>
             <?php
             include '../koneksi.php';
             $spp = mysqli_query($koneksi, "SELECT*FROM spp ORDER BY id_spp ASC");
