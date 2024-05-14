@@ -2,7 +2,6 @@
 $nisn = $_SESSION['nisn'];
 ?>
 <h5>History Pembayaran.</h5>
-<a href="?url=pembayaran" class="btn btn-primary"> KEMBALI </a>
 <hr>
 <table class="table table-striped table-bordered">
     <tr class="fw-bold">
